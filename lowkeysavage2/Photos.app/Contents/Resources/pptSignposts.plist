@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>os</key>
+	<array>
+        <dict>
+            <key>subsystem</key>
+            <string>com.apple.coredata</string>
+            <key>category</key>
+            <string>instruments</string>
+            <key>name</key>
+            <string>Fetch</string>
+            <key>aggregateStatistics</key>
+            <array>
+                <string>Count</string>
+                <string>Max</string>
+                <string>Sum</string>
+            </array>
+            <key>targetTests</key>
+            <array>
+				<string>launch</string>
+				<string>ScrollMoments</string>
+				<string>ScrollAllPhotos</string>
+				<string>ScrollPeopleHome</string>
+				<string>ScrollPeopleDetail</string>
+				<string>ScrollMemories</string>
+				<string>ScrollFavoriteMemories</string>
+				<string>OneUpTransition</string>
+				<string>LoadPhotoEditorWarm</string>
+				<string>LoadPeopleHome</string>
+				<string>LoadPeopleBootstrap</string>
+				<string>LoadPeopleDetail</string>
+				<string>SwipeOneUp</string>
+				<string>ArrowOneUp</string>
+				<string>MailSharing</string>
+				<string>Import</string>
+				<string>NamePeoplePerson</string>
+				<string>CommitPeopleBootstrap</string>
+				<string>SwitchMomentsToMemories</string>
+				<string>ResizeWindow</string>
+				<string>ResizeWindowFullScreen</string>
+				<string>PerformSearchPlainText</string>
+				<string>ExportAlbum</string>
+				<string>ScrollCuratedLibraryAllPhotos</string>
+				<string>ScrollCuratedLibraryAllPhotosFast</string>
+				<string>ScrollCuratedLibraryDays</string>
+				<string>ScrollCuratedLibraryDaysFast</string>
+				<string>ScrollCuratedLibraryMonths</string>
+				<string>PerformSearchTokenizedText</string>
+				<string>ScrollSearchResultsTest</string>
+            </array>
+            <key>description</key>
+            <string>Measure CoreData Fetch performance</string>
+        </dict>
+	</array>
+	<key>ktrace</key>
+	<array/>
+</dict>
+</plist>

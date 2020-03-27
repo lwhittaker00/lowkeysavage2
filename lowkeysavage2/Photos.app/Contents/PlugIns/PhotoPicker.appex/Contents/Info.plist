@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>18A391012</string>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>PhotoPicker</string>
+	<key>CFBundleExecutable</key>
+	<string>PhotoPicker</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.mobileslideshow.photo-picker</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>CFBundleName</key>
+	<string>PhotoPicker</string>
+	<key>CFBundlePackageType</key>
+	<string>XPC!</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>11M392u</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>10.15</string>
+	<key>DTSDKBuild</key>
+	<string>19D58</string>
+	<key>DTSDKName</key>
+	<string>macosx10.15internal</string>
+	<key>DTXcode</key>
+	<string>1100</string>
+	<key>DTXcodeBuild</key>
+	<string>11M392u</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.15</string>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionHostViewControllerClass</key>
+		<string>PUPhotoPickerHostViewController</string>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.mobileslideshow.photo-picker</string>
+		<key>NSExtensionPrincipalClass</key>
+		<string>PUPhotoPickerRemoteViewController</string>
+	</dict>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>2</integer>
+	</array>
+</dict>
+</plist>

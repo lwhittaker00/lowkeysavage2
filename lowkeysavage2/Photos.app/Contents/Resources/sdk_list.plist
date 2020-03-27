@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>OtherDeps</key>
+	<dict>
+		<key>PhotoPrintProductCompiledThemes</key>
+		<string>99</string>
+	</dict>
+	<key>SDKs</key>
+	<dict>
+		<key>CloudPhotoLibrary.framework</key>
+		<string>353.4.11-15-g903d8d4</string>
+		<key>PhotoAnalysis.framework</key>
+		<string>3200.1.200-6-g9d4c02b</string>
+		<key>PhotoPrintProduct.framework</key>
+		<string>656</string>
+		<key>PhotoPrintProductStore.framework</key>
+		<string>130</string>
+		<key>PhotosPlayer.framework</key>
+		<string>3130.0.120</string>
+		<key>PhotosUICore.framework</key>
+		<string>3200.1.240-3-g3462755</string>
+		<key>PlacesKit.framework</key>
+		<string>1</string>
+		<key>Slideshows.framework</key>
+		<string>1556.24</string>
+		<key>iTunesLibrary.framework</key>
+		<string>12.3.2.35</string>
+	</dict>
+	<key>SubFrameworks</key>
+	<dict>
+		<key>PhotoAnalysis.framework</key>
+		<array>
+			<string>PhotoVision.framework</string>
+			<string>PhotosGraph.framework</string>
+		</array>
+		<key>PhotosGraph.framework</key>
+		<array>
+			<string>KnowledgeGraphKit.framework</string>
+			<string>MediaMiningKit.framework</string>
+			<string>PipelineKit.framework</string>
+		</array>
+		<key>Slideshows.framework</key>
+		<array>
+			<string>OpusFoundation.framework</string>
+			<string>OpusKit.framework</string>
+		</array>
+	</dict>
+	<key>TrainID</key>
+	<string>Fuji</string>
+</dict>
+</plist>

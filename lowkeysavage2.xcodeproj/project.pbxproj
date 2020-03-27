@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE74FF5A24243298006D25C8 /* IMG_2932 (1).mov in Resources */ = {isa = PBXBuildFile; fileRef = CE74FF5924243298006D25C8 /* IMG_2932 (1).mov */; };
+		CE74FF6424245EC6006D25C8 /* applogotransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = CE74FF6324245EC6006D25C8 /* applogotransparent.png */; };
+		CE74FF6624246D3E006D25C8 /* applogopic.png in Resources */ = {isa = PBXBuildFile; fileRef = CE74FF6524246D3E006D25C8 /* applogopic.png */; };
 		CEAF376823E291B800E3C238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF376723E291B800E3C238 /* AppDelegate.swift */; };
 		CEAF376A23E291B800E3C238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF376923E291B800E3C238 /* SceneDelegate.swift */; };
 		CEAF376C23E291B800E3C238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF376B23E291B800E3C238 /* ViewController.swift */; };
@@ -15,6 +18,10 @@
 		CEAF377423E291BA00E3C238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAF377223E291BA00E3C238 /* LaunchScreen.storyboard */; };
 		CEAF377F23E291BB00E3C238 /* lowkeysavage2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF377E23E291BB00E3C238 /* lowkeysavage2Tests.swift */; };
 		CEAF378A23E291BB00E3C238 /* lowkeysavage2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF378923E291BB00E3C238 /* lowkeysavage2UITests.swift */; };
+		CEAF379A23E29EDC00E3C238 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF379923E29EDC00E3C238 /* TabBarController.swift */; };
+		CED395C124212F8B004856A0 /* IMG_2932.mov in Resources */ = {isa = PBXBuildFile; fileRef = CED395C024212F8B004856A0 /* IMG_2932.mov */; };
+		CED395C3242130B1004856A0 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED395C2242130B1004856A0 /* ARViewController.swift */; };
+		CEFFB8ED4727A5125C0CA707 /* Pods_lowkeysavage2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF531710321A20FC2045E414 /* Pods_lowkeysavage2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CEAF376423E291B800E3C238 /* lowkeysavage2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lowkeysavage2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15415150EDC9F33E5AA0CDD5 /* Pods-lowkeysavage2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lowkeysavage2.debug.xcconfig"; path = "Target Support Files/Pods-lowkeysavage2/Pods-lowkeysavage2.debug.xcconfig"; sourceTree = "<group>"; };
+		28154212E198E7319131E9B8 /* Pods-lowkeysavage2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lowkeysavage2.release.xcconfig"; path = "Target Support Files/Pods-lowkeysavage2/Pods-lowkeysavage2.release.xcconfig"; sourceTree = "<group>"; };
+		AF531710321A20FC2045E414 /* Pods_lowkeysavage2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lowkeysavage2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE74FF5924243298006D25C8 /* IMG_2932 (1).mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "IMG_2932 (1).mov"; sourceTree = "<group>"; };
+		CE74FF6324245EC6006D25C8 /* applogotransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applogotransparent.png; sourceTree = "<group>"; };
+		CE74FF6524246D3E006D25C8 /* applogopic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applogopic.png; sourceTree = "<group>"; };
+		CEAF376423E291B800E3C238 /* l0wkey savage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "l0wkey savage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAF376723E291B800E3C238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAF376923E291B800E3C238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CEAF376B23E291B800E3C238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +62,9 @@
 		CEAF378523E291BB00E3C238 /* lowkeysavage2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lowkeysavage2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAF378923E291BB00E3C238 /* lowkeysavage2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lowkeysavage2UITests.swift; sourceTree = "<group>"; };
 		CEAF378B23E291BB00E3C238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEAF379923E29EDC00E3C238 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CED395C024212F8B004856A0 /* IMG_2932.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_2932.mov; sourceTree = "<group>"; };
+		CED395C2242130B1004856A0 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFFB8ED4727A5125C0CA707 /* Pods_lowkeysavage2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39F7D207F99BB42AB01D558D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF531710321A20FC2045E414 /* Pods_lowkeysavage2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95EAB79B6CF455A00383F3D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15415150EDC9F33E5AA0CDD5 /* Pods-lowkeysavage2.debug.xcconfig */,
+				28154212E198E7319131E9B8 /* Pods-lowkeysavage2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CEAF375B23E291B800E3C238 = {
 			isa = PBXGroup;
 			children = (
@@ -83,13 +117,15 @@
 				CEAF377D23E291BB00E3C238 /* lowkeysavage2Tests */,
 				CEAF378823E291BB00E3C238 /* lowkeysavage2UITests */,
 				CEAF376523E291B800E3C238 /* Products */,
+				95EAB79B6CF455A00383F3D1 /* Pods */,
+				39F7D207F99BB42AB01D558D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		CEAF376523E291B800E3C238 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEAF376423E291B800E3C238 /* lowkeysavage2.app */,
+				CEAF376423E291B800E3C238 /* l0wkey savage.app */,
 				CEAF377A23E291BB00E3C238 /* lowkeysavage2Tests.xctest */,
 				CEAF378523E291BB00E3C238 /* lowkeysavage2UITests.xctest */,
 			);
@@ -102,10 +138,16 @@
 				CEAF376723E291B800E3C238 /* AppDelegate.swift */,
 				CEAF376923E291B800E3C238 /* SceneDelegate.swift */,
 				CEAF376B23E291B800E3C238 /* ViewController.swift */,
+				CED395C2242130B1004856A0 /* ARViewController.swift */,
+				CEAF379923E29EDC00E3C238 /* TabBarController.swift */,
 				CEAF376D23E291B800E3C238 /* Main.storyboard */,
 				CEAF377023E291BA00E3C238 /* Assets.xcassets */,
 				CEAF377223E291BA00E3C238 /* LaunchScreen.storyboard */,
 				CEAF377523E291BA00E3C238 /* Info.plist */,
+				CED395C024212F8B004856A0 /* IMG_2932.mov */,
+				CE74FF5924243298006D25C8 /* IMG_2932 (1).mov */,
+				CE74FF6524246D3E006D25C8 /* applogopic.png */,
+				CE74FF6324245EC6006D25C8 /* applogotransparent.png */,
 			);
 			path = lowkeysavage2;
 			sourceTree = "<group>";
@@ -135,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEAF378E23E291BB00E3C238 /* Build configuration list for PBXNativeTarget "lowkeysavage2" */;
 			buildPhases = (
+				5B5BB9039491CB6A5C40C620 /* [CP] Check Pods Manifest.lock */,
 				CEAF376023E291B800E3C238 /* Sources */,
 				CEAF376123E291B800E3C238 /* Frameworks */,
 				CEAF376223E291B800E3C238 /* Resources */,
+				60A96EC794EBE12D474022B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,7 +189,7 @@
 			);
 			name = lowkeysavage2;
 			productName = lowkeysavage2;
-			productReference = CEAF376423E291B800E3C238 /* lowkeysavage2.app */;
+			productReference = CEAF376423E291B800E3C238 /* l0wkey savage.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CEAF377923E291BB00E3C238 /* lowkeysavage2Tests */ = {
@@ -232,9 +276,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED395C124212F8B004856A0 /* IMG_2932.mov in Resources */,
 				CEAF377423E291BA00E3C238 /* LaunchScreen.storyboard in Resources */,
 				CEAF377123E291BA00E3C238 /* Assets.xcassets in Resources */,
 				CEAF376F23E291B800E3C238 /* Main.storyboard in Resources */,
+				CE74FF6624246D3E006D25C8 /* applogopic.png in Resources */,
+				CE74FF5A24243298006D25C8 /* IMG_2932 (1).mov in Resources */,
+				CE74FF6424245EC6006D25C8 /* applogotransparent.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +302,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B5BB9039491CB6A5C40C620 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lowkeysavage2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60A96EC794EBE12D474022B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lowkeysavage2/Pods-lowkeysavage2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lowkeysavage2/Pods-lowkeysavage2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lowkeysavage2/Pods-lowkeysavage2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEAF376023E291B800E3C238 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -262,6 +352,8 @@
 				CEAF376C23E291B800E3C238 /* ViewController.swift in Sources */,
 				CEAF376823E291B800E3C238 /* AppDelegate.swift in Sources */,
 				CEAF376A23E291B800E3C238 /* SceneDelegate.swift in Sources */,
+				CED395C3242130B1004856A0 /* ARViewController.swift in Sources */,
+				CEAF379A23E29EDC00E3C238 /* TabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,17 +524,19 @@
 		};
 		CEAF378F23E291BB00E3C238 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15415150EDC9F33E5AA0CDD5 /* Pods-lowkeysavage2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JFZU5X4BKS;
 				INFOPLIST_FILE = lowkeysavage2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.latejahmyrtlewhittaker.lowkeysavage2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latejahwhittaker.lowkeysavage2;
+				PRODUCT_NAME = "l0wkey savage";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,17 +544,19 @@
 		};
 		CEAF379023E291BB00E3C238 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28154212E198E7319131E9B8 /* Pods-lowkeysavage2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JFZU5X4BKS;
 				INFOPLIST_FILE = lowkeysavage2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.latejahmyrtlewhittaker.lowkeysavage2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latejahwhittaker.lowkeysavage2;
+				PRODUCT_NAME = "l0wkey savage";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
