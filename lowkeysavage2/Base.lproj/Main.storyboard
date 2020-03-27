@@ -11,40 +11,63 @@
         <scene sceneID="jLH-uz-mZB">
             <objects>
                 <tabBarController id="lFB-KZ-JPz" customClass="TabBarController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hJj-w2-Y4i">
+                        <barButtonItem key="leftBarButtonItem" title="Refresh" image="arrow.clockwise" catalog="system" id="J81-aI-Zzm" customClass="refreshBarButton"/>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Forward" image="arrow.right" catalog="system" id="zCT-r4-9UH" customClass="forwardButton"/>
+                            <barButtonItem title="Back" image="arrow.left" catalog="system" id="BEc-6i-eAK" customClass="backButton"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9iA-Ry-Z5q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Yrw-1Y-r4r" kind="relationship" relationship="viewControllers" id="qgr-yc-WEJ"/>
-                        <segue destination="onf-9h-AD2" kind="relationship" relationship="viewControllers" id="iqK-7I-4TG"/>
+                        <segue destination="gcV-6o-0nB" kind="relationship" relationship="viewControllers" id="qgr-yc-WEJ"/>
+                        <segue destination="PJj-uV-76A" kind="relationship" relationship="viewControllers" id="iqK-7I-4TG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bs-ny-SWi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1241" y="125"/>
         </scene>
-        <!--Home-->
+        <!--View Controller-->
         <scene sceneID="KTh-yN-DEM">
             <objects>
                 <viewController id="Yrw-1Y-r4r" customClass="ViewController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NGF-Nq-gHn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKu-hV-5rH" customClass="webView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="9NV-no-fr5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="FuF-8D-yyV"/>
-                    <connections>
-                        <outlet property="sceneView" destination="PCQ-s0-9F5" id="DYv-E2-YA1"/>
-                    </connections>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="6uG-uG-ghf">
+                        <barButtonItem key="leftBarButtonItem" title="refresh" image="arrow.clockwise" catalog="system" id="Adk-lU-6h9" customClass="refreshBarButton"/>
+                        <rightBarButtonItems>
+                            <barButtonItem title="forward" image="arrow.right" catalog="system" id="Jzh-0n-vkK" customClass="forwardButton"/>
+                            <barButtonItem title="Item" image="arrow.left" catalog="system" id="hNQ-Hi-c2L" customClass="backButton"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQs-lH-0jF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-230.43478260869566" y="850.44642857142856"/>
+            <point key="canvasLocation" x="679.71014492753625" y="850.44642857142856"/>
         </scene>
-        <!--Scanner-->
+        <!--View Controller-->
         <scene sceneID="M6L-aD-Z1d">
             <objects>
                 <viewController id="onf-9h-AD2" customClass="ARViewController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,24 +76,65 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PCQ-s0-9F5" customClass="sceneView">
-                                <rect key="frame" x="0.0" y="33" width="414" height="780"/>
+                                <rect key="frame" x="0.0" y="77" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ZES-qX-SJm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Scanner" image="camera.viewfinder" catalog="system" selectedImage="camera.viewfinder" id="3Xk-EK-W0u"/>
+                    <navigationItem key="navigationItem" id="gz4-Pd-NiK"/>
                     <connections>
                         <outlet property="sceneView" destination="PCQ-s0-9F5" id="V4C-i4-Lnu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QzH-3q-7O3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-191" y="125"/>
+            <point key="canvasLocation" x="718.84057971014499" y="124.55357142857142"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Vh3-mu-PtD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gcV-6o-0nB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="FuF-8D-yyV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1GP-uK-mtl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yrw-1Y-r4r" kind="relationship" relationship="rootViewController" id="y4j-LE-K7P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ozo-bB-1nR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-230.43478260869566" y="850.44642857142856"/>
+        </scene>
+        <!--Scanner-->
+        <scene sceneID="fpe-Vd-rwk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PJj-uV-76A" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Scanner" image="camera.viewfinder" catalog="system" selectedImage="camera.viewfinder" id="3Xk-EK-W0u"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cWw-7K-Xze">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="onf-9h-AD2" kind="relationship" relationship="rootViewController" id="Fa5-Yq-V95"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXa-yv-fCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-191.30434782608697" y="124.55357142857142"/>
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="arrow.right" catalog="system" width="64" height="48"/>
         <image name="camera.viewfinder" catalog="system" width="64" height="56"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
     </resources>

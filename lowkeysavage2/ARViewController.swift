@@ -38,14 +38,14 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         }
         
         // Run the view's session
-        sceneView.session.run(configuration)
+        sceneView!.session.run(configuration)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         // Pause the view's session
-        sceneView.session.pause()
+        sceneView!.session.pause()
     }
 
     // MARK: - ARSCNViewDelegate
