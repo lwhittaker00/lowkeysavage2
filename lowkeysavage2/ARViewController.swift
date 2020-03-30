@@ -22,6 +22,32 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        // 1
+        let nav = self.navigationController?.navigationBar
+        let tabs = self.tabBarController?.tabBar
+    
+        
+        
+        // 2
+        nav?.barStyle = UIBarStyle.black
+        nav?.tintColor = UIColor.red
+        tabs?.barStyle = UIBarStyle.black
+        tabs?.tintColor = UIColor.red
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 5, height: 5))
+        imageView.contentMode = .scaleAspectFit
+              
+        // 4
+        let image = UIImage(named: "headerlogotransparent")
+        imageView.image = image
+              
+        // 5
+        navigationItem.titleView = imageView
+      
+    }
+
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

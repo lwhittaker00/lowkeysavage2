@@ -19,13 +19,15 @@ class ViewController: UIViewController, WKNavigationDelegate {
         let nav = self.navigationController?.navigationBar
         let tabs = self.tabBarController?.tabBar
     
+        
+        
         // 2
         nav?.barStyle = UIBarStyle.black
         nav?.tintColor = UIColor.red
         tabs?.barStyle = UIBarStyle.black
         tabs?.tintColor = UIColor.red
         
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 5, height: 5))
         imageView.contentMode = .scaleAspectFit
               
         // 4
@@ -53,32 +55,30 @@ class ViewController: UIViewController, WKNavigationDelegate {
         webView.load(request)
           
         // 2
+        
+        self.navigationController?.isToolbarHidden = false
+        navigationController?.toolbar.barTintColor = UIColor.lightGray
+        navigationController?.toolbar.tintColor = UIColor.red
         let refreshBarButton = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
-        let backButton = UIBarButtonItem(title: "<", style: .plain, target: self, action: #selector(goBack))
-        let forwardButton = UIBarButtonItem(title: ">", style: .plain, target: self, action: #selector(goForward))
+        let backButton = UIBarButtonItem(title: "<-", style: .plain, target: self, action: #selector(goBack))
+        let forwardButton = UIBarButtonItem(title: "->", style: .plain, target: self, action: #selector(goForward))
         
-        navigationItem.leftBarButtonItem = refreshBarButton
-        navigationItem.rightBarButtonItems = [forwardButton, backButton]
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
         
-        
-        
-
+        self.toolbarItems = [refreshBarButton, flexibleSpace, backButton, forwardButton]
         
         
         
-        /*
-        navigationItem.rightBarButtonItems =
-            [ UIBarButtonItem(title: ">", style: .plain, target: self, action: #selector(goForward)),
-              UIBarButtonItem(title: "<", style: .plain, target: self, action: #selector(goBack))] */
-        
-        if webView.isLoading {
-            let loader = UIActivityIndicatorView(style: .medium)
-            loader.startAnimating()
-            navigationItem.leftBarButtonItem = UIBarButtonItem(customView: loader)
-        }
-        else {
-            navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
-        }
+//        if webView.isLoading {
+//            let loader = UIActivityIndicatorView(style: .medium)
+//            loader.startAnimating()
+//            navigationItem.leftBarButtonItem = UIBarButtonItem(customView: loader)
+//
+//            //toolbarItems.
+//        }
+//        else {
+//            navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
+//        }
 
         // Do any additional setup after loading the view.
     }
@@ -101,7 +101,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         title = webView.title
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
+        
     }
     
     
