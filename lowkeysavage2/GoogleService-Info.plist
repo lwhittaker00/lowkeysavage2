@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1064606376910-75nbq312vfvjhtoedghvpie1hafskd6h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1064606376910-75nbq312vfvjhtoedghvpie1hafskd6h</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBHHwSE3SpKSWoX8orr-r-bF7AFLKInJO0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1064606376910</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.latejahwhittaker.lowkeysavage2</string>
+	<key>PROJECT_ID</key>
+	<string>l0wkeysavage-14b1d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>l0wkeysavage-14b1d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1064606376910:ios:11334962d976dd141e819f</string>
+	<key>DATABASE_URL</key>
+	<string>https://l0wkeysavage-14b1d.firebaseio.com</string>
+</dict>
+</plist>
