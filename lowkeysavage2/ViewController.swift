@@ -59,7 +59,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         self.navigationController?.isToolbarHidden = false
         navigationController?.toolbar.barTintColor = UIColor.lightGray
         navigationController?.toolbar.tintColor = UIColor.red
-        let refreshBarButton = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
+        var refreshBarButton = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
         let backButton = UIBarButtonItem(title: "<-", style: .plain, target: self, action: #selector(goBack))
         let forwardButton = UIBarButtonItem(title: "->", style: .plain, target: self, action: #selector(goForward))
         
@@ -72,12 +72,12 @@ class ViewController: UIViewController, WKNavigationDelegate {
 //        if webView.isLoading {
 //            let loader = UIActivityIndicatorView(style: .medium)
 //            loader.startAnimating()
-//            navigationItem.leftBarButtonItem = UIBarButtonItem(customView: loader)
+//            refreshBarButton = UIBarButtonItem(customView: loader)
 //
 //            //toolbarItems.
 //        }
 //        else {
-//            navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
+//            refreshBarButton = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
 //        }
 
         // Do any additional setup after loading the view.
@@ -100,7 +100,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        title = webView.title
+        //title = webView.title
         
     }
     
