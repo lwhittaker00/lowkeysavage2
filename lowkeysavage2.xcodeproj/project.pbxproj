@@ -11,10 +11,13 @@
 		CE08BA102432771A003A02FD /* applogotransparent2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE08BA0F2432771A003A02FD /* applogotransparent2.png */; };
 		CE08BA1424328A50003A02FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08BA1324328A50003A02FD /* LoginViewController.swift */; };
 		CE08BA1624328F97003A02FD /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE08BA1524328F97003A02FD /* LocalAuthentication.framework */; };
+		CE08BA1824397012003A02FD /* adminWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08BA1724397012003A02FD /* adminWebViewController.swift */; };
+		CE08BA1A243982F7003A02FD /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08BA19243982F7003A02FD /* welcomeViewController.swift */; };
 		CE41D573242E64D0006FEBF1 /* headerlogotransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41D572242E64D0006FEBF1 /* headerlogotransparent.png */; };
 		CE74FF5A24243298006D25C8 /* IMG_2932 (1).mov in Resources */ = {isa = PBXBuildFile; fileRef = CE74FF5924243298006D25C8 /* IMG_2932 (1).mov */; };
 		CE74FF6424245EC6006D25C8 /* applogotransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = CE74FF6324245EC6006D25C8 /* applogotransparent.png */; };
 		CE74FF6624246D3E006D25C8 /* applogopic.png in Resources */ = {isa = PBXBuildFile; fileRef = CE74FF6524246D3E006D25C8 /* applogopic.png */; };
+		CE7E3466243A6F75002F33D6 /* videoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E3465243A6F75002F33D6 /* videoPlayerViewController.swift */; };
 		CEAF376823E291B800E3C238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF376723E291B800E3C238 /* AppDelegate.swift */; };
 		CEAF376A23E291B800E3C238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF376923E291B800E3C238 /* SceneDelegate.swift */; };
 		CEAF376C23E291B800E3C238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF376B23E291B800E3C238 /* ViewController.swift */; };
@@ -54,10 +57,13 @@
 		CE08BA0F2432771A003A02FD /* applogotransparent2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applogotransparent2.png; sourceTree = "<group>"; };
 		CE08BA1324328A50003A02FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE08BA1524328F97003A02FD /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		CE08BA1724397012003A02FD /* adminWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adminWebViewController.swift; sourceTree = "<group>"; };
+		CE08BA19243982F7003A02FD /* welcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
 		CE41D572242E64D0006FEBF1 /* headerlogotransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headerlogotransparent.png; sourceTree = "<group>"; };
 		CE74FF5924243298006D25C8 /* IMG_2932 (1).mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "IMG_2932 (1).mov"; sourceTree = "<group>"; };
 		CE74FF6324245EC6006D25C8 /* applogotransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applogotransparent.png; sourceTree = "<group>"; };
 		CE74FF6524246D3E006D25C8 /* applogopic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applogopic.png; sourceTree = "<group>"; };
+		CE7E3465243A6F75002F33D6 /* videoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoPlayerViewController.swift; sourceTree = "<group>"; };
 		CEAF376423E291B800E3C238 /* l0wkey savage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "l0wkey savage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAF376723E291B800E3C238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAF376923E291B800E3C238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +128,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CE7E3467243A7258002F33D6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEAF376B23E291B800E3C238 /* ViewController.swift */,
+				CE08BA1724397012003A02FD /* adminWebViewController.swift */,
+				CED395C2242130B1004856A0 /* ARViewController.swift */,
+				CE7E3465243A6F75002F33D6 /* videoPlayerViewController.swift */,
+				CEAF379923E29EDC00E3C238 /* TabBarController.swift */,
+				CE08BA1324328A50003A02FD /* LoginViewController.swift */,
+				CE08BA19243982F7003A02FD /* welcomeViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CE7E3468243A7279002F33D6 /* Pictures & Videos */ = {
+			isa = PBXGroup;
+			children = (
+				CED395C024212F8B004856A0 /* IMG_2932.mov */,
+				CE74FF5924243298006D25C8 /* IMG_2932 (1).mov */,
+				CE74FF6524246D3E006D25C8 /* applogopic.png */,
+				CE41D572242E64D0006FEBF1 /* headerlogotransparent.png */,
+				CE74FF6324245EC6006D25C8 /* applogotransparent.png */,
+				CE08BA0F2432771A003A02FD /* applogotransparent2.png */,
+			);
+			path = "Pictures & Videos";
+			sourceTree = "<group>";
+		};
 		CEAF375B23E291B800E3C238 = {
 			isa = PBXGroup;
 			children = (
@@ -149,21 +182,13 @@
 			children = (
 				CEAF376723E291B800E3C238 /* AppDelegate.swift */,
 				CEAF376923E291B800E3C238 /* SceneDelegate.swift */,
-				CEAF376B23E291B800E3C238 /* ViewController.swift */,
-				CED395C2242130B1004856A0 /* ARViewController.swift */,
-				CEAF379923E29EDC00E3C238 /* TabBarController.swift */,
+				CE7E3467243A7258002F33D6 /* View Controllers */,
 				CEAF376D23E291B800E3C238 /* Main.storyboard */,
-				CE08BA1324328A50003A02FD /* LoginViewController.swift */,
-				CEAF377023E291BA00E3C238 /* Assets.xcassets */,
 				CEAF377223E291BA00E3C238 /* LaunchScreen.storyboard */,
-				CEAF377523E291BA00E3C238 /* Info.plist */,
-				CED395C024212F8B004856A0 /* IMG_2932.mov */,
-				CE74FF5924243298006D25C8 /* IMG_2932 (1).mov */,
-				CE74FF6524246D3E006D25C8 /* applogopic.png */,
-				CE08BA0F2432771A003A02FD /* applogotransparent2.png */,
-				CE74FF6324245EC6006D25C8 /* applogotransparent.png */,
-				CE41D572242E64D0006FEBF1 /* headerlogotransparent.png */,
+				CEAF377023E291BA00E3C238 /* Assets.xcassets */,
+				CE7E3468243A7279002F33D6 /* Pictures & Videos */,
 				CE08BA0D24327266003A02FD /* GoogleService-Info.plist */,
+				CEAF377523E291BA00E3C238 /* Info.plist */,
 			);
 			path = lowkeysavage2;
 			sourceTree = "<group>";
@@ -368,11 +393,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7E3466243A6F75002F33D6 /* videoPlayerViewController.swift in Sources */,
 				CE08BA1424328A50003A02FD /* LoginViewController.swift in Sources */,
+				CE08BA1A243982F7003A02FD /* welcomeViewController.swift in Sources */,
 				CEAF376C23E291B800E3C238 /* ViewController.swift in Sources */,
 				CEAF376823E291B800E3C238 /* AppDelegate.swift in Sources */,
 				CEAF376A23E291B800E3C238 /* SceneDelegate.swift in Sources */,
 				CED395C3242130B1004856A0 /* ARViewController.swift in Sources */,
+				CE08BA1824397012003A02FD /* adminWebViewController.swift in Sources */,
 				CEAF379A23E29EDC00E3C238 /* TabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

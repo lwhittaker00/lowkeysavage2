@@ -10,7 +10,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="jLH-uz-mZB">
             <objects>
-                <tabBarController id="lFB-KZ-JPz" customClass="TabBarController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="lFB-KZ-JPz" customClass="TabBarController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="hJj-w2-Y4i">
                         <barButtonItem key="leftBarButtonItem" title="Refresh" image="arrow.clockwise" catalog="system" id="J81-aI-Zzm" customClass="refreshBarButton"/>
                         <rightBarButtonItems>
@@ -35,13 +35,13 @@
         <!--View Controller-->
         <scene sceneID="KTh-yN-DEM">
             <objects>
-                <viewController id="Yrw-1Y-r4r" customClass="ViewController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Yrw-1Y-r4r" customClass="ViewController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NGF-Nq-gHn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKu-hV-5rH" customClass="webView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="632"/>
+                                <rect key="frame" x="0.0" y="30" width="414" height="690"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -50,7 +50,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zV2-yF-P4m">
-                                <rect key="frame" x="0.0" y="666" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="720" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Item" id="JGd-Sh-qnk"/>
@@ -83,13 +83,26 @@
                                 <rect key="frame" x="0.0" y="77" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpj-GE-fpU">
+                                <rect key="frame" x="283" y="100" width="111" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Play Video -&gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playVideoButtonTapped:" destination="onf-9h-AD2" eventType="touchUpInside" id="Tgi-AI-sCS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ZES-qX-SJm"/>
                     </view>
                     <navigationItem key="navigationItem" id="gz4-Pd-NiK"/>
                     <connections>
+                        <outlet property="playVideoButton" destination="zpj-GE-fpU" id="y3l-qb-WTZ"/>
                         <outlet property="sceneView" destination="PCQ-s0-9F5" id="V4C-i4-Lnu"/>
+                        <segue destination="bMs-wJ-FMI" kind="show" identifier="playVideo" id="ev1-Uf-rFx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QzH-3q-7O3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -97,30 +110,50 @@
             <point key="canvasLocation" x="718.84057971014499" y="124.55357142857142"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="LqO-cC-mbn">
+            <objects>
+                <viewController storyboardIdentifier="videoPlayerViewController" modalPresentationStyle="fullScreen" id="bMs-wJ-FMI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9vJ-Q4-Tad">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVf-vn-TPH">
+                                <rect key="frame" x="171" y="353" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Video"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ryr-sH-omg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V2R-hq-cXT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7da-5A-viU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797" y="126"/>
+        </scene>
+        <!--Welcome View Controller-->
         <scene sceneID="ZSe-wp-M2r">
             <objects>
-                <viewController id="l9R-wm-Tv6" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="l9R-wm-Tv6" customClass="welcomeViewController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Kb-SH-tDT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applogotransparent2.png" translatesAutoresizingMaskIntoConstraints="NO" id="edo-Af-HRF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="applogotransparent2.png" translatesAutoresizingMaskIntoConstraints="NO" id="edo-Af-HRF">
                                 <rect key="frame" x="-81" y="97" width="577" height="307"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="577" id="Yae-h4-ltW"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3l-HV-NLr">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3l-HV-NLr" customClass="getStartedButton">
                                 <rect key="frame" x="129" y="449" width="157" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="95o-w2-CwW"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Get Started"/>
                                 <connections>
-                                    <segue destination="lFB-KZ-JPz" kind="show" id="hSw-Mf-wi7"/>
+                                    <action selector="getStartedButton:" destination="maO-FG-Uh4" eventType="touchUpInside" id="wkJ-4r-sBm"/>
+                                    <segue destination="lFB-KZ-JPz" kind="show" id="TZF-CZ-tOs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvx-bP-qmc">
@@ -134,36 +167,35 @@
                                     <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="QQk-j0-2JX" kind="show" id="DJJ-z6-fCg"/>
+                                    <segue destination="QQk-j0-2JX" kind="show" id="ZR8-uk-XR3"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="G3l-HV-NLr" firstAttribute="leading" secondItem="fRl-rN-V2i" secondAttribute="leading" constant="129" id="2A6-2p-qJ2"/>
-                            <constraint firstItem="edo-Af-HRF" firstAttribute="centerX" secondItem="G3l-HV-NLr" secondAttribute="centerX" id="AuA-sF-1pM"/>
                             <constraint firstItem="fRl-rN-V2i" firstAttribute="bottom" secondItem="Wvx-bP-qmc" secondAttribute="bottom" constant="18" id="LZC-Xf-JOG"/>
-                            <constraint firstItem="G3l-HV-NLr" firstAttribute="top" secondItem="edo-Af-HRF" secondAttribute="bottom" constant="45" id="Pbm-wb-Zlz"/>
-                            <constraint firstItem="edo-Af-HRF" firstAttribute="top" secondItem="fRl-rN-V2i" secondAttribute="top" constant="53" id="aHf-7l-btj"/>
-                            <constraint firstItem="fRl-rN-V2i" firstAttribute="bottom" secondItem="G3l-HV-NLr" secondAttribute="bottom" constant="360" id="eZh-2T-RtY"/>
-                            <constraint firstItem="edo-Af-HRF" firstAttribute="centerX" secondItem="5Kb-SH-tDT" secondAttribute="centerX" id="hgb-iu-C3x"/>
                             <constraint firstItem="fRl-rN-V2i" firstAttribute="trailing" secondItem="Wvx-bP-qmc" secondAttribute="trailing" constant="23" id="oMy-Z7-8g7"/>
                             <constraint firstItem="Wvx-bP-qmc" firstAttribute="leading" secondItem="fRl-rN-V2i" secondAttribute="leading" constant="347" id="zOb-s3-aGJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fRl-rN-V2i"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gWT-jY-Ta4"/>
+                    <connections>
+                        <outlet property="getStartedButton" destination="G3l-HV-NLr" id="rHl-Yf-alh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fl7-R4-Ihs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="maO-FG-Uh4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-2430.434782608696" y="124.55357142857142"/>
         </scene>
         <!--Scanner-->
         <scene sceneID="UTV-N1-xd2">
             <objects>
-                <navigationController id="bpj-kJ-dmI" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="bpj-kJ-dmI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Scanner" image="camera.viewfinder" catalog="system" id="Jdh-xN-053"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dpV-6H-GgL">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -177,15 +209,26 @@
         <!--Scanner-->
         <scene sceneID="rPn-jm-DaN">
             <objects>
-                <viewController id="FO3-vz-8IV" customClass="ARViewController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="FO3-vz-8IV" customClass="ARViewController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Qg-1e-Xn0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CL4-Te-KJH" customClass="sceneView">
                                 <rect key="frame" x="0.0" y="69" width="414" height="690"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyt-Sz-69h">
+                                <rect key="frame" x="158" y="602" width="98" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Play video">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playVideoButtonTapped:" destination="onf-9h-AD2" eventType="touchUpInside" id="Zd9-qf-bWM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Afd-Ay-TcS"/>
@@ -198,31 +241,67 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tl2-8u-Bf2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="157" y="2409"/>
+            <point key="canvasLocation" x="156.52173913043478" y="2408.7053571428569"/>
         </scene>
         <!--hi-->
         <scene sceneID="JT4-5G-fzq">
             <objects>
-                <viewController title="hi" wantsFullScreenLayout="YES" id="Tge-Cj-lw5" sceneMemberID="viewController">
+                <viewController title="hi" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="Tge-Cj-lw5" customClass="adminWebViewController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zle-G1-W4c">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9r-xk-80p">
+                                <rect key="frame" x="0.0" y="663" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" id="eB4-CO-c4W"/>
+                                </items>
+                            </toolbar>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oKt-Tf-eHs">
+                                <rect key="frame" x="0.0" y="56" width="414" height="607"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="lAk-HJ-ioc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="hi" id="QQG-Qw-LBP"/>
+                    <navigationItem key="navigationItem" id="KyL-Ix-yZ3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUl-2Q-3hN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-981" y="3130"/>
+            <point key="canvasLocation" x="155.07246376811597" y="3155.3571428571427"/>
+        </scene>
+        <!--Your Shop-->
+        <scene sceneID="DZk-ZO-UQN">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="Gd4-D5-Jva" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Your Shop" image="cart.fill" catalog="system" id="bZ0-sK-Ua0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kz6-9d-9Nc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Tge-Cj-lw5" kind="relationship" relationship="rootViewController" id="FbC-2A-Gyy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcg-1z-1Si" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-771" y="3155"/>
         </scene>
         <!--Home-->
         <scene sceneID="Tin-RC-6Wa">
             <objects>
-                <navigationController id="fDa-sU-Vkl" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="fDa-sU-Vkl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="LcJ-hr-ttf"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="22J-ON-7O1">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -236,13 +315,13 @@
         <!--Home-->
         <scene sceneID="eUO-1s-wWc">
             <objects>
-                <viewController id="Nwz-lc-Fg0" customClass="ViewController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Nwz-lc-Fg0" customClass="ViewController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S0o-lw-Jq6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P8q-gN-NAc" customClass="webView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="637"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="675"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -251,7 +330,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bze-D5-bUh">
-                                <rect key="frame" x="0.0" y="725" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="671" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Item" id="agy-sl-xmL"/>
@@ -271,9 +350,9 @@
         <!--Login View Controller-->
         <scene sceneID="aoC-KB-VZc">
             <objects>
-                <viewController id="QQk-j0-2JX" customClass="LoginViewController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="QQk-j0-2JX" customClass="LoginViewController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MA7-BP-lcX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="admin log in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mX4-A5-CIy">
@@ -287,17 +366,17 @@
                                 <rect key="frame" x="-81" y="51" width="577" height="307"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RE7-UF-SAS">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RE7-UF-SAS">
                                 <rect key="frame" x="117" y="419" width="181" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="go" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IXt-pn-xD7">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IXt-pn-xD7">
                                 <rect key="frame" x="117" y="478" width="181" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EU7-Yf-r6V">
                                 <rect key="frame" x="173" y="545" width="68" height="30"/>
@@ -306,7 +385,17 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="touchIdAction:" destination="QQk-j0-2JX" eventType="touchUpInside" id="1QJ-bB-6wl"/>
+                                    <action selector="loginAction:" destination="QQk-j0-2JX" eventType="touchUpInside" id="AYU-Vx-O80"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55N-cr-hPT">
+                                <rect key="frame" x="23" y="43" width="40" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="l9R-wm-Tv6" kind="show" id="d2w-zr-I53"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -315,7 +404,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="atN-7f-tRd"/>
                     <connections>
-                        <outlet property="successLabel" destination="mX4-A5-CIy" id="6Gz-T7-aWM"/>
+                        <outlet property="email" destination="RE7-UF-SAS" id="7un-Gb-8hl"/>
+                        <outlet property="loginButton" destination="EU7-Yf-r6V" id="G0V-jB-2l3"/>
+                        <outlet property="password" destination="IXt-pn-xD7" id="mzy-6Y-B3h"/>
+                        <segue destination="MnW-uW-ad6" kind="show" identifier="loginToHome" id="Wgf-Sx-JDO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEV-dI-Yda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -325,7 +417,7 @@
         <!--adminTabController-->
         <scene sceneID="dHz-e0-k4d">
             <objects>
-                <tabBarController storyboardIdentifier="hi" title="adminTabController" id="MnW-uW-ad6" customClass="TabBarController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="loginToHome" title="adminTabController" modalPresentationStyle="fullScreen" id="MnW-uW-ad6" customClass="TabBarController" customModule="l0wkey_savage" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="9H8-RV-QfM"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7WZ-k1-ir2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -333,19 +425,19 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Tge-Cj-lw5" kind="relationship" relationship="viewControllers" id="Cea-ge-ZsW"/>
                         <segue destination="fDa-sU-Vkl" kind="relationship" relationship="viewControllers" id="HrL-rY-3er"/>
                         <segue destination="bpj-kJ-dmI" kind="relationship" relationship="viewControllers" id="QKh-Cd-wVP"/>
+                        <segue destination="Gd4-D5-Jva" kind="relationship" relationship="viewControllers" id="vBQ-yF-ju4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgE-je-aFd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1652" y="2032"/>
+            <point key="canvasLocation" x="-1649" y="2028"/>
         </scene>
         <!--Home-->
         <scene sceneID="Vh3-mu-PtD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gcV-6o-0nB" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="gcV-6o-0nB" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="FuF-8D-yyV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1GP-uK-mtl">
@@ -364,7 +456,7 @@
         <!--Scanner-->
         <scene sceneID="fpe-Vd-rwk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PJj-uV-76A" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="PJj-uV-76A" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Scanner" image="camera.viewfinder" catalog="system" selectedImage="camera.viewfinder" id="3Xk-EK-W0u"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cWw-7K-Xze">
@@ -387,6 +479,7 @@
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="camera.viewfinder" catalog="system" width="128" height="114"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
     </resources>
