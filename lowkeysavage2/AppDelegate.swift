@@ -8,12 +8,16 @@
 
 import UIKit
 import Firebase
+import AVKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     var window: UIWindow?
+    
+    var videoPlayer : AVPlayer? = nil
 
     func application(_ application: UIApplication,
       didFinishLaunchingWithOptions launchOptions:

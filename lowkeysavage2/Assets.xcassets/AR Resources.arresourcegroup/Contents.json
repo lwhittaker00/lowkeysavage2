@@ -1,9 +1,12 @@
 {
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   },
   "resources" : [
+    {
+      "filename" : "18B4AB34-F523-470C-9DF4-7CE029A41657_1_201_a.arreferenceimage"
+    },
     {
       "filename" : "applogoblack.arreferenceimage"
     },

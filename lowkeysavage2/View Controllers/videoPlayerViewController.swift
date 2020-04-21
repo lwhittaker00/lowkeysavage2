@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class videoPlayerViewController: ViewController {
+class videoPlayerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,23 @@ class videoPlayerViewController: ViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        let nav = self.navigationController?.navigationBar
+        let tabs = self.tabBarController?.tabBar
+        
+        nav?.barStyle = UIBarStyle.black
+        nav?.tintColor = UIColor.red
+        tabs?.barStyle = UIBarStyle.black
+        tabs?.tintColor = UIColor.red
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 5, height: 5))
+        imageView.contentMode = .scaleAspectFit
+              
+        // 4
+        let image = UIImage(named: "headerlogotransparent")
+        imageView.image = image
+              
+        // 5
+        navigationItem.titleView = imageView
     }
     
     @IBAction func playVideoButtonPressed(_ sender: Any) {
@@ -28,8 +45,8 @@ class videoPlayerViewController: ViewController {
     
 
     private func playVideo() {
-        guard let path = Bundle.main.path(forResource: "IMG_2932", ofType:"mov") else {
-            debugPrint("IMG_2932.mov not found")
+        guard let path = Bundle.main.path(forResource: "updatedpromovideol$", ofType:"mov") else {
+            debugPrint("updatedpromovideol$.mov not found")
             return
         }
         let player = AVPlayer(url: URL(fileURLWithPath: path))

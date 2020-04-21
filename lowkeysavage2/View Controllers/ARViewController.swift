@@ -24,16 +24,24 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         super.viewDidLoad()
         
         // Set the view's delegate
-        sceneView.delegate = self
+        sceneView?.delegate = self
+        
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        let alert = UIAlertController(title: "How this works:", message: "Hold the camera over any l0wkey $avage logo to unlock the official promotional video!", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Got It!", style: .default, handler: nil))
+        alert.view.tintColor = UIColor.red
+        self.present(alert, animated: true)
+        
+        
         // 1
         let nav = self.navigationController?.navigationBar
         let tabs = self.tabBarController?.tabBar
         playVideoButton.layer.cornerRadius = 5
-        playVideoButton.isHidden = false
+        playVideoButton.isHidden = true
     
         
         
@@ -80,13 +88,20 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         // Pause the view's session
         sceneView!.session.pause()
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        sceneView!.session.pause()
+        
+    }
 
     // MARK: - ARSCNViewDelegate
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
             
             // if the anchor is not of type ARImageAnchor (which means image is not detected), just return
-            guard let imageAnchor = anchor as? ARImageAnchor, let fileUrlString = Bundle.main.path(forResource: "IMG_2932", ofType: "mov") else {return}
+            guard let imageAnchor = anchor as? ARImageAnchor, let fileUrlString = Bundle.main.path(forResource: "updatedpromovideol$", ofType: "mov") else {return}
             //find our video file
             
             let videoItem = AVPlayerItem(url: URL(fileURLWithPath: fileUrlString))
@@ -96,7 +111,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             let videoNode = SKVideoNode(avPlayer: player)
             
             player.play()
-            playVideoButton.isHidden = false
+            //playVideoButton.isHidden = false
         
         
         
@@ -108,7 +123,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             //}
             
             // set the size (just a rough one will do)
-            let videoScene = SKScene(size: CGSize(width: 1100, height: 800))
+            let videoScene = SKScene(size: CGSize(width: 800, height: 700))
             // center our video to the size of our video scene
             videoNode.position = CGPoint(x: videoScene.size.width / 2, y: videoScene.size.height / 2)
             // invert our video so it does not look upside down
@@ -129,9 +144,10 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     }
     
     
+    
     private func playVideo() {
-        guard let path = Bundle.main.path(forResource: "IMG_2932", ofType:"mov") else {
-            debugPrint("IMG_2932.mov not found")
+        guard let path = Bundle.main.path(forResource: "updatedpromovideol$", ofType:"mov") else {
+            debugPrint("updatedpromovideol$.mov not found")
             return
         }
         let player2 = AVPlayer(url: URL(fileURLWithPath: path))
@@ -142,11 +158,13 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     @IBAction func playVideoButtonTapped(_ sender: UIButton) {
-      
+        let vc = ARViewController()
+        vc.dismiss(animated: true, completion: nil)
         
+        //playVideo()
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "videoPlayerViewController") as! videoPlayerViewController
-         self.present(newViewController, animated: true, completion: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "videoPlayerViewController")
+        self.present(newViewController, animated: true, completion: nil)
     //performSegue(withIdentifier: "playVideo", sender: playVideoButton)
         
         
@@ -154,6 +172,17 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 //           let appDelegate = UIApplication.shared.delegate as! AppDelegate
 //           appDelegate.window?.rootViewController = vc
 //        }
+    }
+    
+    var videoPlayer : AVPlayer? {
+        get {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            return appDelegate.videoPlayer
+        }
+        set {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.videoPlayer = newValue
+        }
     }
     
     }
