@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE74FF5A24243298006D25C8 /* IMG_2932 (1).mov in Resources */ = {isa = PBXBuildFile; fileRef = CE74FF5924243298006D25C8 /* IMG_2932 (1).mov */; };
-		CE74FF6424245EC6006D25C8 /* applogotransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = CE74FF6324245EC6006D25C8 /* applogotransparent.png */; };
-		CE74FF6624246D3E006D25C8 /* applogopic.png in Resources */ = {isa = PBXBuildFile; fileRef = CE74FF6524246D3E006D25C8 /* applogopic.png */; };
+		CE08BA0E24327266003A02FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE08BA0D24327266003A02FD /* GoogleService-Info.plist */; };
+		CE08BA102432771A003A02FD /* applogotransparent2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE08BA0F2432771A003A02FD /* applogotransparent2.png */; };
+		CE08BA1424328A50003A02FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08BA1324328A50003A02FD /* LoginViewController.swift */; };
+		CE08BA1624328F97003A02FD /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE08BA1524328F97003A02FD /* LocalAuthentication.framework */; };
+		CE08BA1824397012003A02FD /* adminWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08BA1724397012003A02FD /* adminWebViewController.swift */; };
+		CE08BA1A243982F7003A02FD /* welcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08BA19243982F7003A02FD /* welcomeViewController.swift */; };
+		CE41D573242E64D0006FEBF1 /* headerlogotransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41D572242E64D0006FEBF1 /* headerlogotransparent.png */; };
+		CE5B0EF6244969F200908148 /* applogopic.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5B0EF5244969F200908148 /* applogopic.png */; };
+		CE5B0EF8244A452900908148 /* applogotransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5B0EF7244A452900908148 /* applogotransparent.png */; };
+		CE7E3466243A6F75002F33D6 /* videoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E3465243A6F75002F33D6 /* videoPlayerViewController.swift */; };
+		CE7E346A244792CF002F33D6 /* updatedpromovideol$.mov in Resources */ = {isa = PBXBuildFile; fileRef = CE7E3469244792CE002F33D6 /* updatedpromovideol$.mov */; };
 		CEAF376823E291B800E3C238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF376723E291B800E3C238 /* AppDelegate.swift */; };
 		CEAF376A23E291B800E3C238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF376923E291B800E3C238 /* SceneDelegate.swift */; };
 		CEAF376C23E291B800E3C238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF376B23E291B800E3C238 /* ViewController.swift */; };
@@ -19,7 +27,6 @@
 		CEAF377F23E291BB00E3C238 /* lowkeysavage2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF377E23E291BB00E3C238 /* lowkeysavage2Tests.swift */; };
 		CEAF378A23E291BB00E3C238 /* lowkeysavage2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF378923E291BB00E3C238 /* lowkeysavage2UITests.swift */; };
 		CEAF379A23E29EDC00E3C238 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF379923E29EDC00E3C238 /* TabBarController.swift */; };
-		CED395C124212F8B004856A0 /* IMG_2932.mov in Resources */ = {isa = PBXBuildFile; fileRef = CED395C024212F8B004856A0 /* IMG_2932.mov */; };
 		CED395C3242130B1004856A0 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED395C2242130B1004856A0 /* ARViewController.swift */; };
 		CEFFB8ED4727A5125C0CA707 /* Pods_lowkeysavage2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF531710321A20FC2045E414 /* Pods_lowkeysavage2.framework */; };
 /* End PBXBuildFile section */
@@ -45,9 +52,17 @@
 		15415150EDC9F33E5AA0CDD5 /* Pods-lowkeysavage2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lowkeysavage2.debug.xcconfig"; path = "Target Support Files/Pods-lowkeysavage2/Pods-lowkeysavage2.debug.xcconfig"; sourceTree = "<group>"; };
 		28154212E198E7319131E9B8 /* Pods-lowkeysavage2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lowkeysavage2.release.xcconfig"; path = "Target Support Files/Pods-lowkeysavage2/Pods-lowkeysavage2.release.xcconfig"; sourceTree = "<group>"; };
 		AF531710321A20FC2045E414 /* Pods_lowkeysavage2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lowkeysavage2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE74FF5924243298006D25C8 /* IMG_2932 (1).mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "IMG_2932 (1).mov"; sourceTree = "<group>"; };
-		CE74FF6324245EC6006D25C8 /* applogotransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applogotransparent.png; sourceTree = "<group>"; };
-		CE74FF6524246D3E006D25C8 /* applogopic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applogopic.png; sourceTree = "<group>"; };
+		CE08BA0D24327266003A02FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE08BA0F2432771A003A02FD /* applogotransparent2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applogotransparent2.png; sourceTree = "<group>"; };
+		CE08BA1324328A50003A02FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE08BA1524328F97003A02FD /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		CE08BA1724397012003A02FD /* adminWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adminWebViewController.swift; sourceTree = "<group>"; };
+		CE08BA19243982F7003A02FD /* welcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeViewController.swift; sourceTree = "<group>"; };
+		CE41D572242E64D0006FEBF1 /* headerlogotransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headerlogotransparent.png; sourceTree = "<group>"; };
+		CE5B0EF5244969F200908148 /* applogopic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = applogopic.png; path = ../../../applogopic.png; sourceTree = "<group>"; };
+		CE5B0EF7244A452900908148 /* applogotransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = applogotransparent.png; path = ../../../applogotransparent.png; sourceTree = "<group>"; };
+		CE7E3465243A6F75002F33D6 /* videoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoPlayerViewController.swift; sourceTree = "<group>"; };
+		CE7E3469244792CE002F33D6 /* updatedpromovideol$.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = updatedpromovideol$.mov; path = ../../../updatedpromovideol$.mov; sourceTree = "<group>"; };
 		CEAF376423E291B800E3C238 /* l0wkey savage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "l0wkey savage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAF376723E291B800E3C238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAF376923E291B800E3C238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +78,6 @@
 		CEAF378923E291BB00E3C238 /* lowkeysavage2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lowkeysavage2UITests.swift; sourceTree = "<group>"; };
 		CEAF378B23E291BB00E3C238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEAF379923E29EDC00E3C238 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		CED395C024212F8B004856A0 /* IMG_2932.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_2932.mov; sourceTree = "<group>"; };
 		CED395C2242130B1004856A0 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE08BA1624328F97003A02FD /* LocalAuthentication.framework in Frameworks */,
 				CEFFB8ED4727A5125C0CA707 /* Pods_lowkeysavage2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +111,7 @@
 		39F7D207F99BB42AB01D558D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE08BA1524328F97003A02FD /* LocalAuthentication.framework */,
 				AF531710321A20FC2045E414 /* Pods_lowkeysavage2.framework */,
 			);
 			name = Frameworks;
@@ -108,6 +124,32 @@
 				28154212E198E7319131E9B8 /* Pods-lowkeysavage2.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE7E3467243A7258002F33D6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEAF376B23E291B800E3C238 /* ViewController.swift */,
+				CE08BA1724397012003A02FD /* adminWebViewController.swift */,
+				CED395C2242130B1004856A0 /* ARViewController.swift */,
+				CE7E3465243A6F75002F33D6 /* videoPlayerViewController.swift */,
+				CEAF379923E29EDC00E3C238 /* TabBarController.swift */,
+				CE08BA1324328A50003A02FD /* LoginViewController.swift */,
+				CE08BA19243982F7003A02FD /* welcomeViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CE7E3468243A7279002F33D6 /* Pictures & Videos */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E3469244792CE002F33D6 /* updatedpromovideol$.mov */,
+				CE5B0EF5244969F200908148 /* applogopic.png */,
+				CE41D572242E64D0006FEBF1 /* headerlogotransparent.png */,
+				CE5B0EF7244A452900908148 /* applogotransparent.png */,
+				CE08BA0F2432771A003A02FD /* applogotransparent2.png */,
+			);
+			path = "Pictures & Videos";
 			sourceTree = "<group>";
 		};
 		CEAF375B23E291B800E3C238 = {
@@ -137,17 +179,13 @@
 			children = (
 				CEAF376723E291B800E3C238 /* AppDelegate.swift */,
 				CEAF376923E291B800E3C238 /* SceneDelegate.swift */,
-				CEAF376B23E291B800E3C238 /* ViewController.swift */,
-				CED395C2242130B1004856A0 /* ARViewController.swift */,
-				CEAF379923E29EDC00E3C238 /* TabBarController.swift */,
+				CE7E3467243A7258002F33D6 /* View Controllers */,
 				CEAF376D23E291B800E3C238 /* Main.storyboard */,
-				CEAF377023E291BA00E3C238 /* Assets.xcassets */,
 				CEAF377223E291BA00E3C238 /* LaunchScreen.storyboard */,
+				CEAF377023E291BA00E3C238 /* Assets.xcassets */,
+				CE7E3468243A7279002F33D6 /* Pictures & Videos */,
+				CE08BA0D24327266003A02FD /* GoogleService-Info.plist */,
 				CEAF377523E291BA00E3C238 /* Info.plist */,
-				CED395C024212F8B004856A0 /* IMG_2932.mov */,
-				CE74FF5924243298006D25C8 /* IMG_2932 (1).mov */,
-				CE74FF6524246D3E006D25C8 /* applogopic.png */,
-				CE74FF6324245EC6006D25C8 /* applogotransparent.png */,
 			);
 			path = lowkeysavage2;
 			sourceTree = "<group>";
@@ -276,13 +314,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED395C124212F8B004856A0 /* IMG_2932.mov in Resources */,
+				CE7E346A244792CF002F33D6 /* updatedpromovideol$.mov in Resources */,
+				CE5B0EF8244A452900908148 /* applogotransparent.png in Resources */,
+				CE08BA102432771A003A02FD /* applogotransparent2.png in Resources */,
+				CE41D573242E64D0006FEBF1 /* headerlogotransparent.png in Resources */,
+				CE08BA0E24327266003A02FD /* GoogleService-Info.plist in Resources */,
 				CEAF377423E291BA00E3C238 /* LaunchScreen.storyboard in Resources */,
 				CEAF377123E291BA00E3C238 /* Assets.xcassets in Resources */,
 				CEAF376F23E291B800E3C238 /* Main.storyboard in Resources */,
-				CE74FF6624246D3E006D25C8 /* applogopic.png in Resources */,
-				CE74FF5A24243298006D25C8 /* IMG_2932 (1).mov in Resources */,
-				CE74FF6424245EC6006D25C8 /* applogotransparent.png in Resources */,
+				CE5B0EF6244969F200908148 /* applogopic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,10 +389,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7E3466243A6F75002F33D6 /* videoPlayerViewController.swift in Sources */,
+				CE08BA1424328A50003A02FD /* LoginViewController.swift in Sources */,
+				CE08BA1A243982F7003A02FD /* welcomeViewController.swift in Sources */,
 				CEAF376C23E291B800E3C238 /* ViewController.swift in Sources */,
 				CEAF376823E291B800E3C238 /* AppDelegate.swift in Sources */,
 				CEAF376A23E291B800E3C238 /* SceneDelegate.swift in Sources */,
 				CED395C3242130B1004856A0 /* ARViewController.swift in Sources */,
+				CE08BA1824397012003A02FD /* adminWebViewController.swift in Sources */,
 				CEAF379A23E29EDC00E3C238 /* TabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
